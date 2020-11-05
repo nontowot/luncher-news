@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <meta HTTP-EQUIV="Expires" CONTENT="-1">
+    <title>Lineage II : TEMPEST</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
     <style type="text/css">
         body {
             margin: 0px;
@@ -160,6 +162,59 @@
             left: 425px;
         }
     </style>
+    <script language="javascript" src="global.js"></script>
+    <SCRIPT language="javascript">
+        function GetClickCountRate(fileName) {
+            try {
+                var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                var strURL = "/public_inc/statistics/" + fileName;
+                var strSend = "";
+            } catch (e) {}
+        }
+
+        function disableselect(e) {
+            return false
+        }
+
+        function reEnable() {
+            return true
+        }
+
+        // IE4+ ? ??
+        document.onselectstart = new Function("return false")
+
+        // NS6 ? ??
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+
+        // ??
+        function openNotice(url) {
+            var url = url;
+            var posi =
+                "width=660,height=465,toolbar=no,location=no,status=no,menubar=no,top=10,left=50,scrollbars=0,resizable=no";
+            window.open(url, "l2postNotice", posi);
+        }
+
+        curPage = 1;
+        document.oncontextmenu = function () {
+            return false
+        }
+
+        if (document.layers) {
+            window.captureEvents(Event.MOUSEDOWN);
+            window.onmousedown = function (e) {
+                if (e.target == document)
+                    return false;
+            }
+        } else {
+            document.onmousedown = function () {
+                return false
+            }
+        }
+    </SCRIPT>
+
 </head>
 
 <body style="margin:0" scroll="no" onLoad="runSlideShow();">
@@ -236,16 +291,16 @@
                 <td><img src="img/cmbox_left.jpg" width="4" height="156"></td>
                 <td>
                     <script language="JavaScript">
-                        < !--
+                        <!--
                         //
-                        -- >
+                        -->
                     </script>
 
                 </td>
                 <td><img src="img/cmbox_right.jpg" width="5" height="156"></td>
             </tr>
             <tr>
-                <td colspan="3"><img src="img/cmbox_bottom.jpg" width="286" height="4"></td>
+                <td colspan="3"><img src="img/cmbox_bottom.jpg" width="286" height="3"></td>
             </tr>
         </table>
         <!-- end :: CM AREA -->
@@ -271,16 +326,16 @@
             var g_MainEvent_defaultImage = '0';
             g_MainEvent_title[0] = 'Event 1';
             g_MainEvent_url[0] = 'https://www.facebook.com/L2DevClassic';
-            g_MainEvent_image[0] = 'img/l2post070822a.jpg';
+            g_MainEvent_image[0] = 'img/post11.jpg';
             g_MainEvent_title[1] = 'Event 2';
             g_MainEvent_url[1] = 'https://www.facebook.com/L2DevClassic';
-            g_MainEvent_image[1] = 'img/l2post070912a.jpg';
+            g_MainEvent_image[1] = 'img/post22.jpg';
             g_MainEvent_title[2] = 'Event 3';
             g_MainEvent_url[2] = 'https://www.facebook.com/L2DevClassic';
-            g_MainEvent_image[2] = 'img/l2post070919a.jpg';
+            g_MainEvent_image[2] = 'img/post33.jpg';
             g_MainEvent_title[3] = 'Event 4';
             g_MainEvent_url[3] = 'https://www.facebook.com/L2DevClassic';
-            g_MainEvent_image[3] = 'img/l2post071001a.jpg';
+            g_MainEvent_image[3] = 'img/post44.jpg';
         </script>
 
         <div class="eventBanner">
